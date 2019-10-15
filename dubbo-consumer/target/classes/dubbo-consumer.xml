@@ -10,8 +10,6 @@
     <dubbo:application name="dubbo-consumer" owner="lvqzTest"/>
     <!-- use multicast registry center to discover service -->
     <dubbo:registry address="multicast://239.5.6.7:1234"/>
-
-    <!--配置式调用服务-->
     <!-- generate proxy for the remote service, then demoService can be used in the same way as the
     local regular interface
         做了两步工作
