@@ -1,12 +1,15 @@
 package com.lvqz.common.domain;
 
+import java.io.Serializable;
+
 /**
  * @author: lvqz
  * @date: 2019/10/14
  * @time: 15:55
  */
-public class User {
+public class User implements Serializable {
 
+    private static final long serialVersionUID = -3008494441853731861L;
     private int id;
     private String name;
 
