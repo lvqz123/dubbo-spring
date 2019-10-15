@@ -1,17 +1,20 @@
+package com.lvqz.consumer.text;
+
+import com.alibaba.dubbo.config.annotation.Reference;
 import com.lvqz.common.service.IUserService;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
-import javax.annotation.Resource;
 
 
 @RunWith(SpringJUnit4ClassRunner.class)
 @ContextConfiguration("classpath:dubbo-consumer.xml")
 public class SpringDubboConsumerTest {
 
-    @Resource
+//    @Resource
+    @Reference //创建接口本地代理对象，并交给spring管理
     private IUserService userService;
 
     @Test

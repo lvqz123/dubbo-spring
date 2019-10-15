@@ -10,11 +10,17 @@
     <dubbo:application name="dubbo-consumer" owner="lvqzTest"/>
     <!-- use multicast registry center to discover service -->
     <dubbo:registry address="multicast://239.5.6.7:1234"/>
+
+    <!--配置式调用服务-->
     <!-- generate proxy for the remote service, then demoService can be used in the same way as the
     local regular interface
         做了两步工作
        1.给接口创建一个遵循dubbo的代理对象
        2.把该代理对象交给Spring管理
      -->
-    <dubbo:reference id="helloService" check="true" interface="com.lvqz.common.service.IUserService"/>
+<!--    <dubbo:reference id="helloService" check="true" interface="com.lvqz.common.service.IUserService"/>-->
+
+    <!--注解式调用服务-->
+    <!--扫描创建本地代理对象-->
+    <dubbo:annotation package="com.lvqz.consumer.text"></dubbo:annotation>
 </beans>

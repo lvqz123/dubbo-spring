@@ -18,5 +18,9 @@
        1.给接口创建一个遵循dubbo的代理对象
        2.把该代理对象交给Spring管理
      -->
-    <dubbo:reference id="helloService" check="true" interface="com.lvqz.common.service.IUserService"/>
+<!--    <dubbo:reference id="helloService" check="true" interface="com.lvqz.common.service.IUserService"/>-->
+
+    <!--注解式调用服务-->
+    <!--扫描创建本地代理对象-->
+    <dubbo:annotation package="com.lvqz.consumer.text"></dubbo:annotation>
 </beans>

@@ -12,8 +12,15 @@
     <dubbo:registry address="multicast://239.5.6.7:1234"/>
     <!-- dubbo协议，port=“服务提供者的监听端口” -->
     <dubbo:protocol name="dubbo" port="20880"/>
+
+    <!--配置式发布-->
     <!-- 注册本地bean -->
-    <bean id="userService" class="com.lvqz.provider.serviceImpl.UserServiceImpl"/>
+<!--    <bean id="userService" class="com.lvqz.provider.serviceImpl.UserServiceImpl"/>-->
     <!-- 把本地bean配置成远程服务（让其他系统的也可以访问这个类），通过暴露接口为远程服务 -->
-    <dubbo:service interface="com.lvqz.common.service.IUserService" ref="userService"/>
+<!--    <dubbo:service interface="com.lvqz.common.service.IUserService" ref="userService"/>-->
+
+    <!--注解式发布-->
+    <!--扫描包路径，不配置package则扫描当前ApplicationContext上下文的所有类-->
+    <dubbo:annotation package="com.lvqz.provider.serviceImpl"></dubbo:annotation>
+
 </beans>
