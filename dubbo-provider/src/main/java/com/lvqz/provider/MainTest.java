@@ -13,16 +13,16 @@ import java.io.IOException;
 public class MainTest {
 
     public static void main(String [] args) throws IOException {
-        //³õÊ¼»¯springÈİÆ÷£¬¼ÓÔØdubbo-provider.xmlÎÄ¼ş
+        //åˆå§‹åŒ–springå®¹å™¨ï¼ŒåŠ è½½dubbo-provider.xmlæ–‡ä»¶
         ApplicationContext context = new ClassPathXmlApplicationContext("classpath:/dubbo-provider.xml");
-        //²é¿´springÖĞ×¢²áµÄbean
+        //æŸ¥çœ‹springä¸­æ³¨å†Œçš„bean
         String[] beanDefinitionNames = context.getBeanDefinitionNames();
         for (String str : beanDefinitionNames) {
 
             System.out.println(str);
 
         }
-        //ÎªÁËÄÜ¹»Õı³£½ÓÊÕÇëÇó£¬ĞèÒª×èÈûÏß³Ì£¬ÈÃËûÒ»Ö±¶Á¡£
+        //ä¸ºäº†èƒ½å¤Ÿæ­£å¸¸æ¥æ”¶è¯·æ±‚ï¼Œéœ€è¦é˜»å¡çº¿ç¨‹ï¼Œè®©ä»–ä¸€ç›´è¯»ã€‚
         System.in.read();
     }
 }

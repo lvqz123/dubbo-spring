@@ -9,12 +9,12 @@ import com.lvqz.common.service.IUserService;
  * @date: 2019/10/14
  * @time: 16:05
  */
-@Service  /*ÕâÀïÕâ¸öserviceÒ»¶¨ÊÇdubboµÄ ¶ø²»ÊÇspringµÄ*/
-          //ÕâÀïÕâ¸ö×¢½â×öÁËÁ½¼şÊÂ£¬1.½«Õâ¸öÀàÅäÖÃ³ÉÔ¶³Ì·şÎñ£¬2.½»¸øspring£¬ÈÃspringÈİÆ÷¹ÜÀí
+@Service  /*è¿™é‡Œè¿™ä¸ªserviceä¸€å®šæ˜¯dubboçš„ è€Œä¸æ˜¯springçš„*/
+          //è¿™é‡Œè¿™ä¸ªæ³¨è§£åšäº†ä¸¤ä»¶äº‹ï¼Œ1.å°†è¿™ä¸ªç±»é…ç½®æˆè¿œç¨‹æœåŠ¡ï¼Œ2.äº¤ç»™springï¼Œè®©springå®¹å™¨ç®¡ç†
 public class UserServiceImpl implements IUserService {
 
     public User getUserById(int id) {
-        User user = new User(1,"ÕÅÈı");
+        User user = new User(1,"å¼ ä¸‰");
         return user;
     }
 }
