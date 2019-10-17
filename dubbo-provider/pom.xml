@@ -25,6 +25,20 @@
             <artifactId>dubbo</artifactId>
             <version>2.6.2</version>
         </dependency>
+        <!--导入zookeeper-->
+        <dependency>
+            <groupId>com.101tec</groupId>
+            <artifactId>zkclient</artifactId>
+            <version>0.10</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.apache.curator</groupId>
+            <artifactId>curator-framework</artifactId>
+            <version>4.0.1</version>
+        </dependency>
+
+
         <!--导入spring    不用导入spring  dubbo依赖了spring-->
         <!--<dependency>
             <groupId>org.springframework</groupId>

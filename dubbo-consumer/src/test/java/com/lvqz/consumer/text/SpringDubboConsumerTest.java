@@ -14,7 +14,7 @@ import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 public class SpringDubboConsumerTest {
 
 //    @Resource
-    @Reference //创建接口本地代理对象，并交给spring管理
+    @Reference //鍒涘缓鎺ュ彛鏈湴浠ｇ悊瀵硅薄锛屽苟浜ょ粰spring绠＄悊
     private IUserService userService;
 
     @Test
