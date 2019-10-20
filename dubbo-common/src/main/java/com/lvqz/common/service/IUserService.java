@@ -12,7 +12,7 @@ import org.springframework.stereotype.Service;
 public interface IUserService {
 
     /**
-     * 一个说话的方法
+     * 涓�涓璇濈殑鏂规硶
      */
     public User getUserById(int id);
 

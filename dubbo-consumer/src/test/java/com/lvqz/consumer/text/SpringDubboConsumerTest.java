@@ -19,7 +19,7 @@ public class SpringDubboConsumerTest {
 
     @Test
     public void test(){
-        System.out.println(userService.getUserById(1));
+        System.out.println(userService.getUserById(3));
     }
 
 }

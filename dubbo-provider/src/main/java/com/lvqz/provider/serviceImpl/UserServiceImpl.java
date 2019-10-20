@@ -14,7 +14,8 @@ import com.lvqz.common.service.IUserService;
 public class UserServiceImpl implements IUserService {
 
     public User getUserById(int id) {
-        User user = new User(1,"张三");
+        User user = new User(id,"李四");
+        System.out.println(user);
         return user;
     }
 }
